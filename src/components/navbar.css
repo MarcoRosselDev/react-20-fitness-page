@@ -1,6 +1,6 @@
 nav {
   height: 5rem;
-  width: 100%;
+  width: 100vw;
   background: var(--color-primary);
   display: grid;
   place-items: center;
@@ -37,7 +37,7 @@ nav {
 }
 
 .nav__links a:hover {
-  color: var(--color-secundary);
+  color: var(--color-secondary);
 }
 
 .active-nav {
