@@ -29,6 +29,12 @@
   --transition: all 500ms ease;
 }
 
+/* GENERAL STYLES */
+
 body {
-  background: var(--color-primary);
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-gray-200);
+  line-height: 1.7;
+  overflow-x: hidden;
+  background: var(--color-gray-600);
 }
