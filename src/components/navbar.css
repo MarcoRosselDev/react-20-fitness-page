@@ -1,0 +1,20 @@
+nav {
+  height: 5rem;
+  width: 100vh;
+  background: var(--color-primary);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/* only shows on medium and small screems */
+.nav__toggle-btn {
+  display: none;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+}
