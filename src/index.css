@@ -92,3 +92,13 @@ img {
   border-radius: 2rem;
   font-size: 1.1rem;
 }
+
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 1.9rem;
+}
+
+.btn.sm:hover {
+  margin: 1rem 0 3.5rem;
+  font-size: 1.1rem;
+}
