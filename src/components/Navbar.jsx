@@ -24,6 +24,7 @@ function Navbar() {
                 <NavLink
                   to={path}
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  onClick={() => setIsNavShowing((prev) => !prev)}
                 >
                   {name}
                 </NavLink>
@@ -33,7 +34,7 @@ function Navbar() {
         </ul>
         <button
           className="nav__toggle-btn"
-          onClick={() => setIsNavShowing(!isNavShowing)}
+          onClick={() => setIsNavShowing((prev) => !prev)}
         >
           {isNavShowing ? <MdOutlineClose /> : <FaBars />}
         </button>
