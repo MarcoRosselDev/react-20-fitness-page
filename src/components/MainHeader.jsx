@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import image from "../images/main_header.png";
+
 function MainHeader() {
   return (
     <header className="main__header">
@@ -11,8 +14,16 @@ function MainHeader() {
             repudiandae? Placeat nam animi esse ipsa aliquid aspernatur
             assumenda fugit recusandae quasi sint.
           </p>
+          <Link to="/plans" className="btn lg">
+            Get Started
+          </Link>
         </div>
-        <div className="main__header-right"></div>
+        <div className="main__header-right">
+          <div className="main__header-circle"></div>
+          <div className="main__header-image">
+            <img src={image} alt="strong guy exercising with a 8kg ball" />
+          </div>
+        </div>
       </div>
     </header>
   );
