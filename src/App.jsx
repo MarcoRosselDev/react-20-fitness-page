@@ -13,13 +13,18 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      <Routes>
+        <Route path="home" element={<Home />} />
+      </Routes>
+      {/* 
+      <Navbar />
       <Home />
       <Contact />
       <Gallery />
       <About />
       <NotFound />
       <Plans />
-      <Trainers />
+      <Trainers /> */}
     </BrowserRouter>
   );
 };
