@@ -1,6 +1,7 @@
 import { FaCrown } from "react-icons/fa";
 import SectionHead from "./SectionHead";
 import { programs } from "../data";
+import Card from "../UI/Card";
 
 function Programs() {
   return (
@@ -10,7 +11,13 @@ function Programs() {
       </div>
       <div className="programs__wrapper">
         {programs.map(({ id, icon, title, info, path }) => {
-          return <h4 key={id}>{title}</h4>;
+          return (
+            <Card className="programs__program" key={id}>
+              <span>{icon}</span>
+              <h4>{title}</h4>
+              <small>{info}</small>
+            </Card>
+          );
         })}
       </div>
     </section>
