@@ -22,15 +22,6 @@ const App = () => {
         <Route path="plans" element={<Plans />} />
         <Route path="trainers" element={<Trainers />} />
       </Routes>
-      {/* 
-      <Navbar />
-      <Home />
-      <Contact />
-      <Gallery />
-      <About />
-      <NotFound />
-      <Plans />
-      <Trainers /> */}
     </BrowserRouter>
   );
 };
