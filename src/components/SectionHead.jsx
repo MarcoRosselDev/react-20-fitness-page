@@ -1,8 +1,8 @@
 const SectionHead = ({ icon, title, className }) => {
   return (
-    <div className="programs__head">
-      <span>{<FaCrown />}</span>
-      <h2>Programs</h2>
+    <div className={`section__head ${className}`}>
+      <span>{icon}</span>
+      <h2>{title}</h2>
     </div>
   );
 };

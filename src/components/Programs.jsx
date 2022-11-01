@@ -1,13 +1,11 @@
 import { FaCrown } from "react-icons/fa";
+import SectionHead from "./SectionHead";
 
 function Programs() {
   return (
     <section className="programs">
       <div className="container programs__container">
-        <div className="programs__head">
-          <span>{<FaCrown />}</span>
-          <h2>Programs</h2>
-        </div>
+        <SectionHead icon={<FaCrown />} title="Programs" />
       </div>
     </section>
   );
