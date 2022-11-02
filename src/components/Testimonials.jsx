@@ -1,5 +1,6 @@
+import { useState } from "react";
 import SectionHead from "./SectionHead";
-import { ImQuotesLeft } from "react-icons/im";
+import { ImOffice, ImQuotesLeft } from "react-icons/im";
 import Card from "../UI/Card";
 import {
   IoIosArrowDropleftCircle,
@@ -8,7 +9,20 @@ import {
 import { testimonials } from "../data";
 
 function Testimonials() {
-  return <div>Testimonials</div>;
+  const [index, setIndex] = useState(0);
+  const { name, quote, job, avatar } = testimonials[index];
+  return (
+    <section className="testimonials">
+      <div className="container testimonials__container">
+        <SectionHead icon={<ImQuotesLeft />} title="Testimonials" />
+        <Card className="testimionial">
+          <div className="testimonial__avatar">
+            <img src={avatar} alt={name} />
+          </div>
+        </Card>
+      </div>
+    </section>
+  );
 }
 
 export default Testimonials;
