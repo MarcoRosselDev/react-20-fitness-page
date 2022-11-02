@@ -9,7 +9,7 @@ import {
 import { testimonials } from "../data";
 
 function Testimonials() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(4);
   const { name, quote, job, avatar } = testimonials[index];
   return (
     <section className="testimonials">
@@ -19,7 +19,18 @@ function Testimonials() {
           <div className="testimonial__avatar">
             <img src={avatar} alt={name} />
           </div>
+          <p className="testimonai__quote">{`${quote}`}</p>
+          <h5>{name}</h5>
+          <small className="testimonial__title">{job}</small>
         </Card>
+        <div className="testimonials__btn-container">
+          <button className="testimonials__btn">
+            <IoIosArrowDropleftCircle />
+          </button>
+          <button className="testimonials__btn">
+            <IoIosArrowDroprightCircle />
+          </button>
+        </div>
       </div>
     </section>
   );
