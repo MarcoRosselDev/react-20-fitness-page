@@ -48,6 +48,33 @@ function Footer() {
             </a>
           </div>
         </article>
+        <article>
+          <h4>Permalinks</h4>
+          <Link to="/about">About</Link>
+          <Link to="/plans">Plans</Link>
+          <Link to="/trainers">Trainers</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/contact">Contact</Link>
+        </article>
+        <article>
+          <h4>Permalinks</h4>
+          <Link to="/about">About</Link>
+          <Link to="/plans">Plans</Link>
+          <Link to="/trainers">Trainers</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/contact">Contact</Link>
+        </article>
+        <article>
+          <h4>Permalinks</h4>
+          <Link to="/about">About</Link>
+          <Link to="/plans">Plans</Link>
+          <Link to="/trainers">Trainers</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/contact">Contact</Link>
+        </article>
+      </div>
+      <div className="footer__copyright">
+        <small>2022 &copy; All Rights Reserved</small>
       </div>
     </footer>
   );
