@@ -13,6 +13,25 @@ function Values() {
             <img src={Image} alt="one of the trainers exercising with ropes" />
           </div>
         </div>
+        <div className="values__right">
+          <SectionHead icon={<GiCutDiamond />} title="Values" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+            beatae magni sequi quo, labore nemo? Ab deleniti, facere quia animi
+            magni eius vero minima, possimus similique neque, et quos nesciunt?
+          </p>
+          <div className="values__wrapper">
+            {values.map(({ id, icon, title, desc }) => {
+              return (
+                <Card className="values__value">
+                  <span>{icon}</span>
+                  <h4>{title}</h4>
+                  <small>{desc}</small>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );
