@@ -9,14 +9,20 @@ import {
 import { testimonials } from "../data";
 
 function Testimonials() {
-  const [index, setIndex] = useState(4);
+  const [index, setIndex] = useState(0);
   const { name, quote, job, avatar } = testimonials[index];
 
   const prevTestimonialHeadler = () => {
-    console.log("hola desde prevTestimonialHeadler");
+    setIndex((prev) => prev - 1);
+    if (index <= 0) {
+      setIndex(testimonials.length - 1);
+    }
   };
   const nextTestimonialHeadler = () => {
-    console.log("hola desde nextTestimonialHeadler");
+    setIndex((prev) => prev + 1);
+    if (index >= testimonials.length - 1) {
+      setIndex(0);
+    }
   };
 
   return (
