@@ -1,5 +1,6 @@
 import MainHeader from "../../components/MainHeader";
 import Programs from "../../components/Programs";
+import Values from "../../components/Values";
 import "./home.css";
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <>
       <MainHeader />
       <Programs />
+      <Values />
     </>
   );
 }
