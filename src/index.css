@@ -126,6 +126,7 @@ section {
   padding: 3rem 2rem;
   border-radius: 0 3rem 0 3rem;
   transition: var(--transition);
+  margin-top: 2rem;
 }
 
 .card:hover {

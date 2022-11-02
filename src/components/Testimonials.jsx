@@ -23,7 +23,7 @@ function Testimonials() {
           <div className="testimonial__avatar">
             <img src={avatar} alt={name} />
           </div>
-          <p className="testimonai__quote">{`${quote}`}</p>
+          <p className="testimonial__quote">{`'${quote}'`}</p>
           <h5>{name}</h5>
           <small className="testimonial__title">{job}</small>
         </Card>
