@@ -14,7 +14,11 @@ function Testimonials() {
   return (
     <section className="testimonials">
       <div className="container testimonials__container">
-        <SectionHead icon={<ImQuotesLeft />} title="Testimonials" />
+        <SectionHead
+          icon={<ImQuotesLeft />}
+          title="Testimonials"
+          className="testimonials__head"
+        />
         <Card className="testimionial">
           <div className="testimonial__avatar">
             <img src={avatar} alt={name} />
