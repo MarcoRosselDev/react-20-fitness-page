@@ -11,6 +11,14 @@ import { testimonials } from "../data";
 function Testimonials() {
   const [index, setIndex] = useState(4);
   const { name, quote, job, avatar } = testimonials[index];
+
+  const prevTestimonialHeadler = () => {
+    console.log("hola desde prevTestimonialHeadler");
+  };
+  const nextTestimonialHeadler = () => {
+    console.log("hola desde nextTestimonialHeadler");
+  };
+
   return (
     <section className="testimonials">
       <div className="container testimonials__container">
@@ -28,10 +36,16 @@ function Testimonials() {
           <small className="testimonial__title">{job}</small>
         </Card>
         <div className="testimonials__btn-container">
-          <button className="testimonials__btn">
+          <button
+            className="testimonials__btn"
+            onClick={prevTestimonialHeadler}
+          >
             <IoIosArrowDropleftCircle />
           </button>
-          <button className="testimonials__btn">
+          <button
+            className="testimonials__btn"
+            onClick={nextTestimonialHeadler}
+          >
             <IoIosArrowDroprightCircle />
           </button>
         </div>
