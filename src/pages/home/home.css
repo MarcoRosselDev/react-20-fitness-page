@@ -309,4 +309,22 @@ footer {
   .values__wrapper {
     gap: 4rem 3rem;
   }
+
+  .values__image {
+    display: none;
+  }
+  /* FAQas */
+  .faqs__wrapper {
+    grid-template-columns: 1fr;
+  }
+  /* testimonials */
+  .testimonials {
+    width: 75%;
+  }
+
+  /* footer */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
 }
