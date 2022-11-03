@@ -175,7 +175,6 @@ section {
   }
 }
 
-/* MEDIA QUERIES (small screens)*/
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2.2rem;
