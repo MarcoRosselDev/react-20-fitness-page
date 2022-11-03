@@ -328,3 +328,29 @@ footer {
     gap: 4rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  /* main header */
+  .main__header {
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+  .main__header-image,
+  .main__header-circle {
+    display: none;
+  }
+  .main__header-container {
+    grid-template-columns: 1fr;
+  }
+  /* PROGRAMS */
+  .programs__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .programs__program {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
