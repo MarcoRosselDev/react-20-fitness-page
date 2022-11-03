@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../images/logo.png";
@@ -5,9 +6,11 @@ import { links } from "../data";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import "./navbar.css";
+// import { useGlobalContext } from "./context";
 
-function Navbar() {
+const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
+  const { isModalOpen, setCloseModal } = useState();
 
   return (
     <nav>
@@ -23,8 +26,9 @@ function Navbar() {
               <li key={index}>
                 <NavLink
                   to={path}
-                  className={({ isActive }) => (isActive ? "active-nav" : "")}
-                  onClick={() => setIsNavShowing((prev) => !prev)}
+                  //className={`${isModalOpen ? "active-nav" : ""}`}
+                  // className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  //onClick={() => setCloseModal((prev) => !prev)}
                 >
                   {name}
                 </NavLink>
@@ -41,6 +45,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

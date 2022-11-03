@@ -41,6 +41,7 @@ nav {
   color: var(--color-secondary);
 }
 
+/*
 .active-nav {
   position: relative;
 }
@@ -55,7 +56,7 @@ nav {
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
   margin-top: 0.9rem;
-}
+} */
 
 /* MEDIA QUERIES (medium and small screens) */
 
