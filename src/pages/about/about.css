@@ -21,8 +21,7 @@
   margin-bottom: 1rem;
 }
 
-.about__story-container,
-.about__Mission-container {
+.about__story-container {
   display: grid;
   grid-template-columns: 40% 50%;
   gap: 10%;

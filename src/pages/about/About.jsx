@@ -16,7 +16,7 @@ const About = () => {
       <section className="about__story">
         <div className="container about__story-container">
           <div className="about__section-image">
-            <img src={StoryImage} alt="Our story image" />
+            <img src={StoryImage} alt="Our Story image" />
           </div>
           <div className="about__section-content">
             <h1>Our Story</h1>
@@ -32,15 +32,6 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
               maiores hic placeat sapiente aliquid facilis odit veniam delectus
               assumenda, commodi accusamus!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus quam voluptas eaque. Cum nostrum corrupti assumenda
-              quia, excepturi similique accusamus odit porro quaerat, iusto
-              explicabo! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Exercitationem officia nihil ullam natus alias dignissimos,
-              rem harum qui eaque omnis sapiente, debitis in nemo totam facere
-              fuga, et vitae voluptas.
             </p>
           </div>
         </div>
@@ -68,34 +59,21 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="about__Mission">
-        <div className="container about__Mission-container">
+      <section className="about__mission">
+        <div className="container about__mission-container">
           <div className="about__section-image">
             <img src={MissionImage} alt="Our Mission image" />
           </div>
           <div className="about__section-content">
             <h1>Our Mission</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-              libero, porro sapiente voluptatibus suscipit non dignissimos odio
-              sunt? Lorem ipsum dolor, eligendi nobis consequatur voluptates
-              mollitia, asperiores repudiandae iusto assumenda similique
-              doloremque? Recusandae consectetur, maiores voluptas quibusdam rem
-              quae!
+              Lorem ipsum, eligendi nobis consequatur voluptates mollitia,
+              asperiores repudiandae iusto assumenda similique doloremque?
+              Recusandae consectetur, maiores voluptas quibusdam rem quae!
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              maiores hic placeat sapiente aliquid facilis odit veniam delectus
+              Lorem ipsum sapiente aliquid facilis odit veniam delectus
               assumenda, commodi accusamus!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus quam voluptas eaque. Cum nostrum corrupti assumenda
-              quia, excepturi similique accusamus odit porro quaerat, iusto
-              explicabo! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Exercitationem officia nihil ullam natus alias dignissimos,
-              rem harum qui eaque omnis sapiente, debitis in nemo totam facere
-              fuga, et vitae voluptas.
             </p>
           </div>
         </div>
