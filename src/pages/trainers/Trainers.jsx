@@ -15,7 +15,7 @@ const Trainers = () => {
         magnam doloribus itaque aspernatur velit.
       </Header>
       <section className="trainers">
-        <div className="cantainer trainers__container">
+        <div className="container trainers__container">
           {trainers.map(({ id, image, name, job, socials }) => {
             return (
               <Trainer
