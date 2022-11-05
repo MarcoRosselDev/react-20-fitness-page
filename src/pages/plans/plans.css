@@ -39,3 +39,19 @@
   margin-top: 3rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  .plans__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .plans__container {
+    grid-template-columns: 1fr;
+  }
+  .plan {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
