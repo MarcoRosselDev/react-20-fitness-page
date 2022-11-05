@@ -1,8 +1,17 @@
-import "./gallery.css";
 import HeaderImage from "../../images/header_bg_3.jpg";
 import Header from "../../components/Header";
+import "./gallery.css";
 
-function Gallery() {
+const Gallery = () => {
+  const galleryLenght = 15;
+  const images = [];
+
+  for (let i = 1; i <= galleryLenght; i++) {
+    images.push(require(`../../images/gallery${i}.jpg`));
+  }
+
+  console.log(images);
+
   return (
     <>
       <Header title="Our Gallery" image={HeaderImage}>
@@ -11,6 +20,6 @@ function Gallery() {
       </Header>
     </>
   );
-}
+};
 
 export default Gallery;
