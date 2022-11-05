@@ -12,7 +12,7 @@ const Plans = () => {
         alias error quam et autem hic fugit eos porro qui?
       </Header>
       <section className="plans">
-        <div className="cantanier plans__container">
+        <div className="container plans__container">
           {plans.map(({ id, name, desc, price, features }) => {
             return (
               <Card key={id} className="plan">
