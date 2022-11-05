@@ -10,14 +10,23 @@ const Gallery = () => {
     images.push(require(`../../images/gallery${i}.jpg`));
   }
 
-  console.log(images);
-
   return (
     <>
       <Header title="Our Gallery" image={HeaderImage}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fugiat
         nihil fugit nemo et! Facere, id impedit.
       </Header>
+      <section className="gellery">
+        <div className="container gallery__container">
+          {images.map((image, index) => {
+            return (
+              <article key={index}>
+                <img src={image} alt={`Gallery image ${index + 1}`} />
+              </article>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 };
