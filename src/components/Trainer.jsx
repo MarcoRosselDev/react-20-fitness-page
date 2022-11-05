@@ -1,7 +1,7 @@
 import { scryRenderedDOMComponentsWithClass } from "react-dom/test-utils";
 import Card from "../UI/Card";
 
-const Trainers = ({ image, name, job, socials }) => {
+const Trainer = ({ image, name, job, socials }) => {
   return (
     <Card className="trainer">
       <div className="trainer__img">
@@ -22,4 +22,4 @@ const Trainers = ({ image, name, job, socials }) => {
   );
 };
 
-export default Trainers;
+export default Trainer;
